@@ -34,7 +34,7 @@ const cinemas = {
 const showsList = document.getElementById("showsList");
 const movieLists = cinemas.movies.map((movie) => {
   return `
-    <div class="col-3">
+    <div class="col-12 col-md-6 col-lg-3">
       <div class="card">
         <div class="card-body">
         <img src=${movie.Image}
