@@ -37,7 +37,7 @@ const movieLists = cinemas.movies.map((movie) => {
     <div class="col-12 col-md-6 col-lg-3">
       <div class="card">
         <div class="card-body">
-        <img src=${movie.Image}
+        <img src="${movie.Image}" class = "card-img-top" alt="${movie.title}">
           <h3>${movie.title}</h3>
           <div class="showslist">
             ${movie.shows.map((time, index) => {
