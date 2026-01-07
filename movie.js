@@ -32,6 +32,8 @@ const cinemas = {
   ]
 };
 const showsList = document.getElementById("showsList");
+// Updated movie cards to include show buttons and seat info
+
 const movieLists = cinemas.movies.map((movie) => {
   return `
 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -40,8 +42,11 @@ const movieLists = cinemas.movies.map((movie) => {
           <img src="${movie.Image}" alt="${movie.title}" class="img-fluid" />
           <h3>${movie.title}</h3>
           <div class="showslist">
+
+
             ${movie.shows.map((time, index) => {
     return `
+    
                 <button class="btn btn-primary m-2">
                   ${time} (${movie.seats[index]} seats)
                 </button>
