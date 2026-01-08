@@ -5,9 +5,8 @@
 
 .card img {
   width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: contain;
-  background: #000; /* optional: fill empty space */
+  aspect-ratio:2/3;
+  object-fit: cover;
 }
 
 
