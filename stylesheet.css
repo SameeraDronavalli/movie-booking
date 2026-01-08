@@ -5,18 +5,13 @@
 
 .card img {
   width: 100%;
-  aspect-ratio:2/3;
+  aspect-ratio: 2 / 3;
   object-fit: cover;
+  border-radius: 12px 12px 0 0;
 }
-
-
 
 /* Mobile view */
 @media (max-width: 576px) {
-  .card img {
-    height: 220px;
-  }
-
   .card h3 {
     font-size: 16px;
     text-align: center;
@@ -25,12 +20,5 @@
   .btn {
     width: 100%;
     margin-bottom: 8px;
-  }
-}
-
-/* Tablet view */
-@media (max-width: 768px) {
-  .card img {
-    height: 260px;
   }
 }
